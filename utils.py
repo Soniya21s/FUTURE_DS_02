@@ -5,9 +5,9 @@ import shap
 import google.generativeai as genai
 
 # LOAD ALL COMPONENTS
-model = joblib.load("../models/churn_model.pkl")
-feature_columns = joblib.load("../models/feature_columns.pkl")
-threshold = joblib.load("../models/threshold.pkl")
+model = joblib.load("./models/churn_model.pkl")
+feature_columns = joblib.load("./models/feature_columns.pkl")
+threshold = joblib.load("./models/threshold.pkl")
 
 # PREPROCESS INPUT
 def preprocess_input(input_df):
